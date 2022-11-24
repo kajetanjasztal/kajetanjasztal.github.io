@@ -74,11 +74,20 @@ a:before {
   transition: height 0.3s;
 }
 
-img {
+.hammock {
+  width: 10rem;
   height: 10rem;
   border-radius: 50%;
   transition: transform var(--spring) 0.8s;
   -webkit-user-drag: none;
+  -webkit-user-select: none;
+  user-select: none;
+  background-image: url("kajtek.png");
+  background-size: cover;
+}
+
+.rock {
+  transform: rotate(10deg);
 }
 
 @media (hover: hover) {
@@ -90,7 +99,7 @@ img {
     height: 85%;
   }
 
-  img:hover {
+  img.hammock:hover {
     transform: rotate(10deg);
   }
 }

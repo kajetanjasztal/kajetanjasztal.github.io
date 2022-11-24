@@ -36,4 +36,27 @@
     </li>
   </ul>
 </nav>
-<img alt="photo of me in a hammock" src="kajtek.png" />
+<script>
+  const hammock = document.createElement("div");
+  const { classList } = hammock;
+  classList.add("hammock");
+  document.body.append(hammock);
+
+  const push = () => classList.add("rock");
+  const pull = () => classList.remove("rock");
+
+  ["mouseup", "touchend"].forEach((event) =>
+    document.body.addEventListener(event, pull)
+  );
+  ["mousedown", "touchstart"].forEach((event) =>
+    document.body.addEventListener(event, push)
+  );
+
+  const text = document.querySelector("nav");
+  ["mouseup", "touchend", "mousedown", "touchstart"].forEach((event) =>
+    text.addEventListener(event, (e) => e.stopPropagation())
+  );
+</script>
+<noscript>
+  <img class="hammock" alt="photo of me in a hammock" src="kajtek.png" />
+</noscript>
