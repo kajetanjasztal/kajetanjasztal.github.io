@@ -1,38 +1,97 @@
 <head>
     <meta charset="utf8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="start.css" />
+    <link rel="stylesheet" type="text/css" href="../start.css" />
     <title>Kajetan Jasztal - portfolio</title>
+    <style>
+        body {
+            flex-direction: column;
+        }
+        p {
+            width: 60ch;
+            display: flex;
+            flex-direction: row;
+            justify-content: stretch;
+        }
+        p * {
+            border-radius: 1em;
+            flex: 1 1 auto;
+            max-height: 60vh;
+            overflow-x: scroll;
+            margin: 1em;
+        }
+        .item {
+            border-radius: 1em;
+        }
+        .round {
+            border-radius: 100%;
+            margin: 1em;
+            width: 5em;
+            height: 5em;
+        }
+    </style>
   </head>
-
+<body>
   <h1>Portfolio</h1>
 
-  <h2>animacje</h2>
-    <video src="assets/01 animacje/01 kopernik.mp4"></video>
-    <video src="assets/01 animacje/02 murator.mp4"></video>
-
-    <video src="assets/01 animacje/04 flaga.m4v"></video>
-    <video src="assets/01 animacje/05 moneycode.mov"></video>
-
-    <img src="assets/01 animacje/06 pinch.gif">
-    <img src="assets/01 animacje/07 scroll.gif">
-    <img src="assets/01 animacje/08 hi5.gif">
-  <h2>ilustracje</h2>
+    <h2>animacje</h2>
+    dla <a href="kopernik.org.pl">Centrum Nauki Kopernik</a>
+    <p>
+      <video muted controls><source src="assets/01 animacje/01 kopernik.mp4"></video>
+    </p>
+    dla <a href="architektura.murator.pl">Architektura Murator</a>
+    <p>
+        <video muted controls style="background-color: rgba(0,0,0,0.15);"><source src="assets/01 animacje/02 murator.mp4"></video>
+    </p>
+    projekty prywatne
+    <p>
+        <video muted controls><source src="assets/01 animacje/04 flaga.m4v"></video></p><p>
+        <video muted controls><source src="assets/01 animacje/05 moneycode.mov"></video></p><p>
+        <div style="background-color: rgba(0,0,0,0.15)">
+            <img class="round" src="assets/01 animacje/06 pinch.gif">
+            <img class="round" src="assets/01 animacje/07 scroll.gif">
+            <img class="round" src="assets/01 animacje/08 hi5.gif">
+        </div>
+    </p>
+    <h2>ilustracje</h2>
+    dla <a href="jcet.eu">JCET</a>
+  <p>
     <img src="assets/02 ilustracje/01 activation.png">
     <img src="assets/02 ilustracje/02 barrier.png">
-
+</p>
+<p>
     <img src="assets/02 ilustracje/03 dysfunction.png">
-
+</p>
+    dla <a href="femifitflow.pl">femi fit flow</a>
+<p>
     <img src="assets/02 ilustracje/11 logotyp.png">
     <img src="assets/02 ilustracje/13 silka.png">
+</p>
+<p>
     <img src="assets/02 ilustracje/14 waga.png">
     <img src="assets/02 ilustracje/15 scroll.png">
+</p>
   <h2>druk</h2>
+  książka o procach
+  <p>
     <img src="assets/03 druk/01 okladka.jpeg">
     <img src="assets/03 druk/02 wezly.jpeg">
     <img src="assets/03 druk/03 wykroje.jpeg">
-
+</p>
+prototyp planszówki
+<p>
     <img src="assets/03 druk/11 box.jpeg">
     <img src="assets/03 druk/12 example.jpeg">
     <img src="assets/03 druk/13 rozklad.jpeg">
-  <h3>szkice</h3>
+</p>
+<h2>szkice</h2>
+<p>
+    <img src="assets/04 szkice/01 doodles.png">
+    <img src="assets/04 szkice/02 doodles.png">
+    <img src="assets/04 szkice/03 doodles.png">
+</p>
+<p>
+    <img src="assets/04 szkice/11 msz.png">
+    <img src="assets/04 szkice/12 nogi.png">
+    <img src="assets/04 szkice/13 pety.png">
+</p>
